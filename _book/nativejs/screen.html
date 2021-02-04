@@ -1,0 +1,462 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>获取设备屏幕参数操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Native JS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="screen.html">
+            
+                <a href="screen.html">
+            
+                    
+                    获取设备屏幕参数操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../vue/router.html">
+            
+                <a href="../vue/router.html">
+            
+                    
+                    vue-router 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Tools
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../tools/postman.html">
+            
+                <a href="../tools/postman.html">
+            
+                    
+                    postman开发记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../tools/gitbook.html">
+            
+                <a href="../tools/gitbook.html">
+            
+                    
+                    gitbook开发记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Others
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../others/cmd.html">
+            
+                <a href="../others/cmd.html">
+            
+                    
+                    cmd命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >获取设备屏幕参数操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x83B7;&#x53D6;&#x624B;&#x673A;&#x5C4F;&#x5E55;&#x5BBD;&#x5EA6;&#x3001;&#x9AD8;&#x5EA6;">&#x83B7;&#x53D6;&#x624B;&#x673A;&#x5C4F;&#x5E55;&#x5BBD;&#x5EA6;&#x3001;&#x9AD8;&#x5EA6;</h2>
+<h3 id="&#x7F51;&#x9875;&#x53EF;&#x89C1;&#x533A;">&#x7F51;&#x9875;&#x53EF;&#x89C1;&#x533A;</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// document.documentElement --&gt; html/root</span>
+<span class="hljs-comment">// document.body --&gt; body</span>
+
+<span class="hljs-comment">// &#x53EF;&#x89C1;&#x533A;&#x5BBD;</span>
+<span class="hljs-built_in">document</span>.body.clientWidth
+<span class="hljs-built_in">document</span>.documentElement.clientWidth
+<span class="hljs-built_in">document</span>.body.offsetWidth <span class="hljs-comment">// &#x5305;&#x62EC;&#x8FB9;&#x7EBF;&#x7684;&#x5BBD;</span>
+<span class="hljs-built_in">document</span>.documentElement.offsetWidth
+
+<span class="hljs-comment">// &#x53EF;&#x89C1;&#x533A;&#x9AD8;</span>
+<span class="hljs-built_in">document</span>.body.clientHeight
+<span class="hljs-built_in">document</span>.documentElement.clientWidth
+<span class="hljs-built_in">document</span>.body.offsetHeight <span class="hljs-comment">// &#x5305;&#x62EC;&#x8FB9;&#x7EBF;&#x7684;&#x5BBD;</span>
+<span class="hljs-built_in">document</span>.documentElement.offsetHeight
+</code></pre>
+<h3 id="&#x7F51;&#x9875;&#x5168;&#x6587;">&#x7F51;&#x9875;&#x5168;&#x6587;</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x5168;&#x6587;&#x5BBD;</span>
+<span class="hljs-built_in">document</span>.body.scrollWidth
+
+<span class="hljs-comment">// &#x5168;&#x6587;&#x9AD8;</span>
+<span class="hljs-built_in">document</span>.body.scrollHeight
+</code></pre>
+<h3 id="&#x7F51;&#x9875;&#x6EDA;&#x52A8;">&#x7F51;&#x9875;&#x6EDA;&#x52A8;</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x6EDA;&#x52A8;&#x6761;&#x9876;&#x90E8;&#x8DDD;&#x79BB;</span>
+<span class="hljs-built_in">document</span>.body.scrollTop
+
+<span class="hljs-comment">// &#x6EDA;&#x52A8;&#x6761;&#x5DE6;&#x4FA7;&#x8DDD;&#x79BB;</span>
+<span class="hljs-built_in">document</span>.body.scrollLeft
+</code></pre>
+<h3 id="&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;">&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x5C4F;&#x5E55;&#x9AD8;</span>
+<span class="hljs-built_in">window</span>.screen.height
+
+<span class="hljs-comment">// &#x5C4F;&#x5E55;&#x5BBD;</span>
+<span class="hljs-built_in">window</span>.screen.width
+
+<span class="hljs-comment">// &#x5C4F;&#x5E55;&#x53EF;&#x7528;&#x5DE5;&#x4F5C;&#x533A;&#xFF0C;&#x51CF;&#x53BB;&#x8BF8;&#x5982;&#x7A97;&#x53E3;&#x5DE5;&#x5177;&#x6761;&#x4E4B;&#x7C7B;&#x7684;&#x754C;&#x9762;&#x7279;&#x5F81;</span>
+<span class="hljs-comment">// &#x9AD8;&#x5EA6;</span>
+<span class="hljs-built_in">window</span>.screen.availHeight
+
+<span class="hljs-comment">// &#x5BBD;&#x5EA6;</span>
+<span class="hljs-built_in">window</span>.screen.availWidth
+</code></pre>
+<h2 id="&#x6EDA;&#x52A8;&#x89E6;&#x5E95;&#x4E8B;&#x4EF6;">&#x6EDA;&#x52A8;&#x89E6;&#x5E95;&#x4E8B;&#x4EF6;</h2>
+<p>&#x9875;&#x9762;&#x6EDA;&#x52A8;&#x89E6;&#x5E95;&#x7FFB;&#x9875;&#x662F;&#x79FB;&#x52A8;&#x7AEF;&#x6BD4;&#x8F83;&#x5E38;&#x89C1;&#x7684;&#x9700;&#x6C42;</p>
+<h3 id="&#x76D1;&#x542C;&#x6EDA;&#x52A8;">&#x76D1;&#x542C;&#x6EDA;&#x52A8;</h3>
+<p>&#x4F7F;&#x7528; <code>element.addEventListener</code> &#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x961F;&#x5217;</p>
+<p>&#x76F4;&#x63A5;&#x4F7F;&#x7528; <code>element.onscroll</code> &#x4F1A;&#x5B58;&#x5728;&#x51B2;&#x7A81;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x51B2;&#x7A81;&#x95EE;&#x9898;&#x662F;&#x6307;&#x5F53;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x5B9A;&#x4E49;&#x4E86;&#x591A;&#x4E2A;&#x6EDA;&#x52A8;&#x4E8B;&#x4EF6;&#x65F6;&#xFF0C;&#x53EA;&#x4F1A;&#x751F;&#x6548;&#x6700;&#x540E;&#x4E00;&#x4E2A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// element &#x4E00;&#x822C;&#x4E3A;window</span>
+element.addEventListener(<span class="hljs-string">&apos;scroll&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// do sth.</span>
+})
+</code></pre>
+<h3 id="&#x5224;&#x65AD;&#x89E6;&#x5E95;">&#x5224;&#x65AD;&#x89E6;&#x5E95;</h3>
+<p>&#x5F53;&#x53EF;&#x89C6;&#x533A;&#x9AD8;&#x5EA6; + &#x6EDA;&#x52A8;&#x6761;&#x9876;&#x90E8;&#x8DDD;&#x79BB; &gt;= &#x5168;&#x6587;&#x9AD8;&#x5EA6;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (element.offsetHeight + element.scrollTop &gt;= element.scrollHeight) {
+    <span class="hljs-comment">// do sth.</span>
+}
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x5224;&#x65AD;&#x8FD8;&#x662F;&#x4E0D;&#x591F;&#xFF0C;&#x5F53;&#x9700;&#x8981;&#x76D1;&#x542C;&#x5BB9;&#x5668;&#x4E3A; <code>window</code> &#x65F6;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x53E6;&#x5916;&#x8BA1;&#x7B97;&#x5BB9;&#x5668;&#x7684;&#x9AD8;&#x5EA6;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> element = <span class="hljs-built_in">document</span>.documentElement || <span class="hljs-built_in">document</span>.body;
+<span class="hljs-keyword">if</span> (element.clientHeight + element.scrollTop &gt;= element.scrollHeigh) {
+    <span class="hljs-comment">// do sth.</span>
+}
+</code></pre>
+<h3 id="&#x6574;&#x7406;">&#x6574;&#x7406;</h3>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+ * &#x76D1;&#x542C;&#x6EDA;&#x52A8;&#x89E6;&#x5E95;&#x4E8B;&#x4EF6;
+ * @options[element]&#xFF0C;&#x76D1;&#x542C;&#x6EDA;&#x52A8;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411;window
+ * @options[callback]&#xFF0C;&#x89E6;&#x5E95;&#x56DE;&#x8C03;
+ * @options[threshold]&#xFF0C;&#x5230;&#x8FBE;&#x5E95;&#x90E8;&#x591A;&#x5C11;&#x8DDD;&#x79BB;&#x89E6;&#x53D1;&#x56DE;&#x8C03;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">evBottomOut</span>(<span class="hljs-params">options</span>) </span>{
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> options == <span class="hljs-string">&apos;function&apos;</span>) {
+        options = {callback: options};
+    }
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> options.callback !== <span class="hljs-string">&apos;function&apos;</span>) <span class="hljs-keyword">return</span>;
+
+    <span class="hljs-keyword">var</span> element = options.element;
+    <span class="hljs-keyword">var</span> isWinow = !element || element.nodeType != <span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">var</span> elListener = isWinow ? <span class="hljs-built_in">window</span> : element;
+
+    <span class="hljs-keyword">var</span> threshold = <span class="hljs-built_in">isNaN</span>(threshold) ? <span class="hljs-number">0</span> : threshold;
+
+    element = isWinow ? (<span class="hljs-built_in">document</span>.documentElement || <span class="hljs-built_in">document</span>.body) : element;
+
+    elListener.addEventListener(<span class="hljs-string">&apos;scroll&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> clientH = isWinow ? element.clientHeight : element.offsetHeight;
+        <span class="hljs-keyword">var</span> scrollT = element.scrollTop;
+        <span class="hljs-keyword">var</span> scrollH = element.scrollHeight;
+
+        <span class="hljs-keyword">if</span> (clientH + scrollT - threshold &gt;= scrollH) {
+            options.callback();
+        }
+    })
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"获取设备屏幕参数操作","level":"1.2.1","depth":2,"next":{"title":"Vue","level":"1.3","depth":1,"ref":"","articles":[{"title":"vue-router 配置","level":"1.3.1","depth":2,"path":"vue/router.md","ref":"vue/router.md","articles":[]}]},"previous":{"title":"Native JS","level":"1.2","depth":1,"ref":"","articles":[{"title":"获取设备屏幕参数操作","level":"1.2.1","depth":2,"path":"nativejs/screen.md","ref":"nativejs/screen.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"myVariable":"Hello World"},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nativejs/screen.md","mtime":"2021-02-03T08:33:34.766Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-03T12:05:12.394Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
